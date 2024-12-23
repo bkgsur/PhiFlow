@@ -15,7 +15,7 @@ with open(join(dirname(__file__), 'phi', 'VERSION'), 'r') as version_file:
 setup(
     name='phiflow',
     version=version,
-    download_url='https://github.com/tum-pbs/PhiFlow/archive/%s.tar.gz' % version,
+    download_url='https://github.com/bkgsur/PhiFlow.git',
     packages=['phi',
               'phi.field',
               'phi.geom',
@@ -40,7 +40,7 @@ setup(
     url='https://github.com/tum-pbs/PhiFlow',
     include_package_data=True,
     install_requires=[
-        'phiml>=1.10.0',
+        'Dart',
         'matplotlib>=3.5.0',  # also required by dash for color maps
         'packaging',
     ],
